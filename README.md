@@ -1,4 +1,7 @@
-# jprq-server-deploy
+# jprq server deploy
+
+[![GitHub](https://img.shields.io/static/v1?style=for-the-badge&message=GitHub&color=181717&logo=GitHub&logoColor=FFFFFF&label=)](https://github.com/robinvandernoord/jprq-server-deploy/edit/master/README.md)
+
 
 This repository contains example deployment files for self-hosting jprq.
 
