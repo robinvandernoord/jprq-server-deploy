@@ -1,0 +1,17 @@
+# /etc/systemd/system/jprq-http.service
+[Unit]
+Description=jprq http
+After=network-online.target
+Wants=network-online.target systemd-networkd-wait-online.service
+
+StartLimitIntervalSec=500
+StartLimitBurst=5
+
+[Service]
+Restart=on-failure
+RestartSec=1s
+
+ExecStart=/usr/bin/jprq-http --host your.domain.tld
+
+[Install]
+WantedBy=multi-user.target
